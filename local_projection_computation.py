@@ -781,7 +781,7 @@ def embed_unitary_matrix(gate_matrix, target_qubits,n_qubits ):
                 output_idx = int(''.join(map(str, output_state)), 2)
                 
                 # Set matrix element
-                full_matrix[output_idx, i] = gate_output[gate_output_idx]
+                full_matrix[i,output_idx] = gate_output[gate_output_idx]
     
     return full_matrix
 
